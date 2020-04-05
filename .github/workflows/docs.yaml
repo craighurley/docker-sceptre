@@ -1,0 +1,26 @@
+name: Update Description on Docker Hub
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'README.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Create additional environment variables
+        run: |
+          # get the repo name as lower case
+          LGITHUB_REPOSITORY=${GITHUB_REPOSITORY,,}
+          # remove 'docker-' from the repo name
+          echo "::set-env name=DOCKER_REPOSITORY::${LGITHUB_REPOSITORY//docker-/}"
+      - name: Update docker hub description
+        uses: peter-evans/dockerhub-description@v2.1.1
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKERHUB_REPOSITORY: ${{ env.DOCKER_REPOSITORY }}
