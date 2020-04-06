@@ -14,7 +14,7 @@ RUN         chmod +x /usr/local/bin/docker-entrypoint.sh \
                 sceptre-date-resolver==1.0.0 \
                 sceptre-kms-resolver==1.0.0 \
                 sceptre-ssm-resolver==1.1.0 \
-                git+https://git@github.com/craighurley/sceptre-terminationprotection-hook.git@1.0.0#egg=sceptre-terminationprotection-hook \
-                git+https://git@github.com/craighurley/sceptre-myip-resolver.git@1.0.0#egg=sceptre-myip-resolver
+                git+https://git@github.com/craighurley/sceptre-myip-resolver.git@1.0.0#egg=sceptre-myip-resolver \
+                git+https://git@github.com/craighurley/sceptre-terminationprotection-hook.git@1.0.0#egg=sceptre-terminationprotection-hook
 
 ENTRYPOINT  [ "docker-entrypoint.sh" ]
