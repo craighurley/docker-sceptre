@@ -7,13 +7,13 @@ Run `sceptre` in a container.
 ## Running
 
 ```sh
-docker run --rm -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir:ro craighurley/sceptre
+docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir:ro craighurley/sceptre
 ```
 
 Optional: create an alias for the container:
 
 ```sh
-alias sceptre='docker run --rm -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir:ro craighurley/sceptre'
+alias sceptre='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir:ro craighurley/sceptre'
 ```
 
 ## Custom Hooks and Resolvers
