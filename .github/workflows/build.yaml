@@ -1,4 +1,4 @@
-name: Build and Publish to Docker Hub
+name: build
 
 on:
   push:
@@ -25,9 +25,3 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: ${{ env.DOCKER_REPOSITORY }}
           tags: "latest,${{ env.RELEASE_VERSION }}"
-      - name: Update docker hub description
-        uses: peter-evans/dockerhub-description@v2.1.1
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-          DOCKERHUB_REPOSITORY: ${{ env.DOCKER_REPOSITORY }}

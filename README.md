@@ -1,6 +1,6 @@
 # docker-sceptre
 
-![Build and Publish to Docker Hub](https://github.com/craighurley/docker-sceptre/workflows/Build%20and%20Publish%20to%20Docker%20Hub/badge.svg)
+![build](https://github.com/craighurley/docker-sceptre/workflows/build/badge.svg)
 
 Run `sceptre` in a container.
 
