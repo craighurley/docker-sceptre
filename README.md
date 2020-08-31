@@ -22,7 +22,7 @@ The following custom hooks have been added to this container:
 
 ### Hooks
 
-- <https://github.com/craighurley/sceptre-terminationprotection-hook>
+- <https://github.com/sceptre/sceptre-stack-termination-protection-hook>
 
 ### Resolvers
 
@@ -33,4 +33,4 @@ The following custom hooks have been added to this container:
 
 ## Links
 
-- <https://github.com/cloudreach/sceptre>
+- <https://github.com/sceptre/sceptre>
