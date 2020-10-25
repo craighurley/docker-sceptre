@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.0-1
+
+- Downgrade python to 3.7 for compatibility with sceptre.
+
 ## 2.4.0
 
 - Upgrade to: sceptre:2.4.0
