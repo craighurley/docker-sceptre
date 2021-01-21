@@ -15,9 +15,9 @@ jobs:
           # get the repo name as lower case
           LGITHUB_REPOSITORY=${GITHUB_REPOSITORY,,}
           # remove 'docker-' from the repo name
-          echo "::set-env name=DOCKER_REPOSITORY::${LGITHUB_REPOSITORY//docker-/}"
+          echo "DOCKER_REPOSITORY=${LGITHUB_REPOSITORY//docker-/}" >> $GITHUB_ENV
           # get the tag and remove prefix
-          echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF//refs\/tags\//})
+          echo "RELEASE_VERSION=$(echo ${GITHUB_REF//refs\/tags\//})" >> $GITHUB_ENV
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
