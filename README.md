@@ -27,7 +27,9 @@ The following custom hooks have been added to this container:
 ### Resolvers
 
 - <https://github.com/craighurley/sceptre-myip-resolver>
+- <https://github.com/sceptre/sceptre-cmd-resolver>
 - <https://github.com/sceptre/sceptre-date-resolver>
+- <https://github.com/sceptre/sceptre-file-resolver>
 - <https://github.com/sceptre/sceptre-kms-resolver>
 - <https://github.com/sceptre/sceptre-ssm-resolver>
 
