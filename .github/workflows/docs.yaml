@@ -17,7 +17,7 @@ jobs:
           # get the repo name as lower case
           LGITHUB_REPOSITORY=${GITHUB_REPOSITORY,,}
           # remove 'docker-' from the repo name
-          echo "::set-env name=DOCKER_REPOSITORY::${LGITHUB_REPOSITORY//docker-/}"
+          echo "DOCKER_REPOSITORY=${LGITHUB_REPOSITORY//docker-/}" >> $GITHUB_ENV
       - name: Update docker hub description
         uses: peter-evans/dockerhub-description@v2
         env:
