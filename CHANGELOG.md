@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.0-4
+
+- Use `sceptre-ssm-resolver` 1.1.3
+
 ## 2.4.0-3
 
 - pip install `sceptre-file-resolver` from pypi now that it's being published there.
