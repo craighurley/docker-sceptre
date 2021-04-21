@@ -8,7 +8,7 @@ RUN         pip3 install --no-cache-dir \
                 sceptre-ssm-resolver==1.1.0 \
                 sceptre-stack-termination-protection-hook==1.1.0 \
                 sceptre-cmd-resolver==1.1.2 \
-                git+https://git@github.com/Sceptre/sceptre-file-resolver.git#egg=sceptre-file-resolver \
+                sceptre-file-resolver==1.0.3 \
                 git+https://git@github.com/craighurley/sceptre-myip-resolver.git@1.0.0#egg=sceptre-myip-resolver
 WORKDIR     /workdir
 ENTRYPOINT  [ "sceptre" ]
